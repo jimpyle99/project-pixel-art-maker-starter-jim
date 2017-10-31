@@ -7,7 +7,18 @@ var row,col,container,n,m, changeColor;
 container = ('table','#pixel_canvas');
 makeGird = ('#pixel_canvas');
 
-$('#input_height','#input_width').submit(function makeGrid(rows,cols) {
+function saveData(){
+  event.preventDefault();
+  let height = document.getElementById('input_height').value;
+  let width = document.getElementById('input_width').value;
+  makeGrid(height, width);
+}
+
+document.getElementById('sizePicker').onsubmit = function(){
+  saveData();
+}
+
+function makeGrid(rows,cols) {
   for (let row = 0; row < rows; row++){
       let tr = table.insertRow();
       for (let col = 0; col < cols; col++){
@@ -15,4 +26,4 @@ $('#input_height','#input_width').submit(function makeGrid(rows,cols) {
         cl.addEventListener('click', fillColor);
       }
   }
-})
+}
