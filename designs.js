@@ -4,19 +4,17 @@
 // When size is submitted by the user, call makeGrid()
 var row,col,container,n,m, changeColor;
 
-row = ('#height');
-col = ('#width');
+row = ('#input_height');
+col = ('#input_width');
 container = ('table','#pixel_canvas');
 makeGird = ('#pixel_canvas');
 
-function makeGrid(row,col) {
-  for (var n = 0; n < row; n++){
-      for (var m = 0; m < col; m++){
-        unit.appendTo('parent');
-    }
+function makeGrid(rows,cols) {
+  for (let row = 0; row < rows; row++){
+      let tr = table.insertRow();
+      for (let col = 0; col < cols; col++){
+        let cl = tr.insertCell();
+        cl.addEventListener('click', fillColor);
+      }
   }
 }
-
-$(input).on('click',function changeColor()){
-  toggle.used.color.on.grid;
-})
