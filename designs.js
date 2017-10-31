@@ -6,6 +6,7 @@ var row,col,container,n,m, changeColor;
 
 container = ('table','#pixel_canvas');
 makeGird = ('#pixel_canvas');
+let table = document.getElementById('pixel_canvas');
 
 function saveData(){
   event.preventDefault();
