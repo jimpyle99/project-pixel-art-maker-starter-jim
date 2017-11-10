@@ -1,5 +1,11 @@
-# Pixel Art Maker Project
+# Pixel Art Maker Project Jim
+# Jim's description
+This is a simple drawing app that lets the users determine how large to make a grid by choosing rows and heights (1-100) and then it draws a table and then allows the user to use the color selector to color in each cell.
 
+# Original Instructions
+Below are the Original Instructions for the lab assignment.
+
+# Pixel Art Maker Project
 ## Table of Contents
 
 * [Instructions](#instructions)

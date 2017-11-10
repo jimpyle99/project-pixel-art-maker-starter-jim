@@ -10,7 +10,7 @@ gridForm.addEventListener("submit", populateGrid);
 
 //clearTable will make sure grid is clear before drawing it
 function clearTable(table) {
-  while (table.firstChild) {
+    while (table.firstChild) {
     table.removeChild(table.firstChild);
   }
 }
